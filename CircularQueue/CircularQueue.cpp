@@ -16,7 +16,6 @@ public:
         cout << "Enter a Number: ";
         cin >> num;
         cout << endl;
-    }
 
     //Cek apakah antrian penuh
     if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)) {
@@ -35,10 +34,16 @@ public:
             REAR = REAR + 1;
     }
     queue_array[REAR] = num;
-};
+    }
 
+    void remove()
+    {
+        //Cek apakah antrian kosong
+        if (FRONT == -1) {
+
+        }
+    };
 int main()
 {
     
 }
-
